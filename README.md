@@ -60,7 +60,6 @@ python main.py
 
 Different evaluation metrics require reading different jsonl files, and we have provided corresponding examples in the previous step.
 
-
 ## 5. Reference Source
 
 [T2I-Metrics](https://github.com/QuanjianSong/T2I-Metrics)
