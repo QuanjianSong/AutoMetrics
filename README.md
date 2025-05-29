@@ -1,9 +1,9 @@
 # AutoMetrics -- This is a Pytorch-integrated pipeline codebase for Metrics in AIGC
 
 ## News
-<pre>
+<pre style="white-space: pre-wrap;">
 • 🔥 The code of AutoMetrics has been released. It is based on <a href="https://github.com/QuanjianSong/T2I-Metrics">T2I-Metrics</a>. We plan to consolidate the two repositories in the near future, appreciate your continued interest!
-</pre>
+<pre style="white-space: pre-wrap;">
   
 ## 0. Project Introduction
 This repository focuses on AIGC evaluation metrics and extends T2I-Metrics by adding metrics such as the DINO score, DreaSim score, aesthetic evaluations, and more.
