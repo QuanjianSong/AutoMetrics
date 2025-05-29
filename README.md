@@ -3,7 +3,7 @@
 ## News
 - 🔥 The code of AutoMetrics has been released. It is based on [T2I-Metrics](https://github.com/QuanjianSong/T2I-Metrics). We plan to consolidate the two repositories in the near future, appreciate your continued interest!
 
-## 0. Projects Introduction
+## 0. Project Introduction
 This repository focuses on AIGC evaluation metrics and extends T2I-Metrics by adding metrics such as the DINO score, DreaSim score, aesthetic evaluations, and more.
 
 ## 1. Environment Configuration
