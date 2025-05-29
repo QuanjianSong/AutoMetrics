@@ -5,9 +5,6 @@ from tqdm import tqdm
 from utils import get_mean
 
 
-
-
-
 # CLIP-T
 def cal_CLIP_T(model, gen_img_dict, seg_img_dict={}, ori_img_dict={}, placeholder_token="<v>"):
     # get sample names
@@ -60,7 +57,7 @@ def cal_CLIP_I(model, gen_img_dict):
     return avg_val
 
 # DINO
-def cal_DINOv2(model, gen_img_dict, seg_img_dict=None, ori_img_dict=None):
+def cal_DINOv2(model, gen_img_dict):
     metric_val_list = []
 
     # 打开并遍历JSONL文件
@@ -103,12 +100,9 @@ def cal_DINOv2(model, gen_img_dict, seg_img_dict=None, ori_img_dict=None):
 
     
 # DreamSim
-def cal_DreamSim(metric_model, gen_img_dict, seg_img_dict=None, ori_img_dict=None, device="cuda"):
+def cal_DreamSim(metric_model, gen_img_dict, device="cuda"):
     preprocess, model_func = metric_model[0], metric_model[1]
-    # group images by the sample name
-    # grouped_seg_img_dict = group_images_by_sample_name(seg_img_dict, type="seg")
-    # grouped_ori_img_dict = group_images_by_sample_name(ori_img_dict, type="ori")
-    # assert grouped_seg_img_dict.keys() == grouped_ori_img_dict.keys()
+
 
     # calculate the metric in an image group of the same sample
     metric_val_list = []
@@ -167,7 +161,7 @@ def cal_LPIPS(metric_model, gen_img_dict, seg_img_dict, ori_img_dict):
 
 
 # LAION_Aes
-def cal_LAION_Aes(metric_model, gen_img_dict, seg_img_dict=None, ori_img_dict=None):
+def cal_LAION_Aes(metric_model, gen_img_dict):
     metric_val_list = []
     with open(gen_img_dict, 'r') as jsonl_file:
         for line in tqdm(jsonl_file):
@@ -183,7 +177,7 @@ def cal_LAION_Aes(metric_model, gen_img_dict, seg_img_dict=None, ori_img_dict=No
 
 
 # Q-Align
-def cal_Q_Align(metric_model, gen_img_dict, seg_img_dict, ori_img_dict):
+def cal_Q_Align(metric_model, gen_img_dict):
     metric_val_list = []
 
     with open(gen_img_dict, 'r') as jsonl_file:

@@ -1,10 +1,11 @@
 import os
 import pyiqa
 from dreamsim import dreamsim
+from models.DINO import DINOv2Model
+from models.CLIP import CLIPModel
 
 
 def init_metric_model(metric_list, device):
-    
     metric_model_dict = {}
 
     for metric_name in metric_list:
@@ -26,7 +27,6 @@ def init_metric_model(metric_list, device):
                                               device=device)
             model = [preprocess, model_func]
         elif metric_name == "LAION-Aes":  # pyiqa
-            # os.environ['PYTORCH_PRETRAINED_BERT_CACHE'] = '/home/sqj/code/SceneDecorator/metric_ckpt/sac+logos+ava1-l14-linearMSE.pth'
             model = pyiqa.create_metric('laion_aes', device=device)
         elif metric_name == "Q-Align":  # pyiqa
             model = metric_model_dict["Q-Align"] \
