@@ -2,7 +2,7 @@
 
 ## News
 <pre style="white-space: pre-wrap;">
-• 🔥 The code of AutoMetrics has been released. It is based on <a href="https://github.com/QuanjianSong/T2I-Metrics">T2I-Metrics</a>.
+• 🔥 The code of AutoMetrics has been released. It extends the capabilities of <a href="https://github.com/QuanjianSong/T2I-Metrics">T2I-Metrics</a>.
 </pre>
   
 ## 0. Project Introduction
