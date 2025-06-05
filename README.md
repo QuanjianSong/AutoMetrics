@@ -13,7 +13,7 @@ AutoMetrics: A Pipeline for Metrics in AIGC
 
 </div>
 
-## News
+## 🎉 News
 <pre style="white-space: pre-wrap;">
 • 🔥 The code of AutoMetrics has been released. It extends the capabilities of <a href="https://github.com/QuanjianSong/T2I-Metrics">T2I-Metrics</a>.
 </pre>
@@ -46,7 +46,7 @@ pip install git+https://github.com/openai/CLIP.git
 
 
 
-## Checkpoint
+## 🤗 Checkpoint
 
 You need to download the inception_v3_google.pth, pt_inception.pth, and ViT-B-32.pt weights files and place them in the checkpoints folder. We have integrated them into the following links for your convenience.
 
