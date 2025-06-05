@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-AutoMetrics: a pipeline codebase for Metrics in AIGC
+AutoMetrics: A Pipeline for Metrics in AIGC [Official Code of PyTorch]
 </h1>
 
 <div>
